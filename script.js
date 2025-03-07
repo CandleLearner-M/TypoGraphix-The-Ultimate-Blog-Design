@@ -15,7 +15,7 @@ function checkScroll() {
   let newSize = 3 - scrollPosition * 0.03; // Decrease by 0.03 rem for every 1px scrolled
 
   // Clamping the font size between 1.5rem and 3rem
-  newSize = Math.max(1.5, newSize);
+  newSize = Math.max(2, newSize);
   newSize = Math.min(3, newSize);
 
   logo.style.fontSize = newSize + "rem";

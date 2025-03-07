@@ -1,0 +1,23 @@
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #333333 !important;
+}
+
+.centered-image-article img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  object-position: center 60%;
+  margin-bottom: 2rem;
+}
+
+.centered-image-article .text-content {
+  width: 75ch;
+}
