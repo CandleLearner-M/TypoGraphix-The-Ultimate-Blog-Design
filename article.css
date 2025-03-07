@@ -2,22 +2,68 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: 2rem auto;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #333333 !important;
 }
+
+p,
+li {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  width: 25vw;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.text-content {
+  width: 75ch;
+  margin: auto 20px;
+}
+
+/* Variations  */
 
 .centered-image-article img {
   width: 100%;
-  height: 45vh;
-  object-fit: cover;
+  max-height: 45vh;
   object-position: center 60%;
-  margin-bottom: 2rem;
 }
 
-.centered-image-article .text-content {
-  width: 75ch;
+.left-image-article {
+  flex-direction: row;
 }
+.right-image-article {
+  flex-direction: row-reverse;
+}
+
+.left-image-article,
+.right-image-article {
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* ------------------------- Media Queries ------------------------- */
+
+/* Tablette */
+@media screen and (max-width: 1100px) {
+  article {
+    width: 95%;
+    margin: 0.5rem auto;
+  }
+
+
+}
+
+/* SmartPhone */
+@media screen and (max-width: 600px) {}
