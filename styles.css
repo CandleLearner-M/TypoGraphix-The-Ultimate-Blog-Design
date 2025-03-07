@@ -183,6 +183,7 @@ footer {
 
   #navbar {
     height: auto;
+    padding: 1rem 5%;
   }
   .main {
     width: 90vw;
@@ -208,7 +209,6 @@ footer {
   .smaller-articles img:first-child {
     object-position: center 40%;
   }
-
 }
 
 /* SmartPhone */
@@ -225,4 +225,12 @@ footer {
   .nav-right a:first-child {
     margin: 0;
   }
-} 
+
+  .featured-article h1 {
+    font-size: 2rem;
+  }
+
+  .article h1 {
+    font-size: 1.3rem;
+  }
+}
